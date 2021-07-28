@@ -27,6 +27,7 @@ public class BooksController {
   @ResponseStatus(HttpStatus.BAD_REQUEST)
   @ExceptionHandler(value = MethodArgumentNotValidException.class)
   public String handleInvalidRequest(final MethodArgumentNotValidException e) {
+    //log headers; ??
     return e.getMessage();
   }
 
