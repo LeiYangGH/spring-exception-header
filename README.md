@@ -4,5 +4,5 @@ a demo project to reproduce the problem of springboot get header when @Exception
 # curl
 
 ```bash
-curl -H "k:v" http://localhost:8080 --data "hello"
+curl -H "id:123" -H "Content-Type: application/json" http://localhost:8080 --data '{"Title":""}' 
 ```
